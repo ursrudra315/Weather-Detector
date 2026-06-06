@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="weather-container">
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name (e.g., Delhi, London)...">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <p id="error-message" class="error-msg hidden"></p>
+
+        <div id="loading" class="loading hidden">Fetching weather updates...</div>
+
+        <div id="weather-card" class="weather-card hidden">
+            <h2 id="location-name">City, Country</h2>
+            <div class="weather-main">
+                <h1 id="temperature">--°C</h1>
+                <p id="weather-desc">Clear Sky</p>
+            </div>
+            
+            <div class="weather-details">
+                <div class="detail-box">
+                    <span>Humidity</span>
+                    <strong id="humidity">--%</strong>
+                </div>
+                <div class="detail-box">
+                    <span>Wind Speed</span>
+                    <strong id="wind-speed">-- km/h</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
